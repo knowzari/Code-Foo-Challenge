@@ -1,0 +1,23 @@
+2) Our images have a ratio of 16:9, and our design layouts have 12 pixel wide increments (there are no limits on height). Give examples of three image sizes that would have the correct ratio and would fit the design layout.
+
+A simple way to solve this problem is to first find a number which is divisible by both 12 and 16. The easiest way to do this is to just multiply these two numbers:
+
+12 * 16 = 192 
+
+With 192 pixels as the width, we can easily find the height just by using the given ratio: 16:9.
+
+192 * ( 9 / 16 ) = 108 pixels.
+
+The first example is 192 x 108 pixels.
+
+You can get two more quick examples just by doubling and tripling this ratio. 
+
+2(192 x 108) = 384 x 216 pixels.
+3(192 x 108) = 576 x 324 pixels.
+
+You can get many more possibilities by getting the lowest common multiple of 12 and 16 which is 48 and incrementing by that, but the question asked for any examples so I just took the easy route for solving this problem.
+
+Examples:
+192 x 108
+384 x 216
+576 x 324

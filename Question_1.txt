@@ -1,0 +1,35 @@
+1) How many pennies could you put on the Golden Gate Bridge without any of them overlapping? For this question, please write out each step in your thought process.
+
+This question can be interpreted in multiple ways. The vagueness of this problem requires the answer to include several given assumptions at the beginning of the problem. First of all, are you placing the pennies on just the road? Or do you include the sidewalk as well? Also you could technically place pennies on the cables (with tape or something) and along all the railings as well. For my answer I will assume that the pennies are to be placed solely on the road and the sidewalks (basically just the "floor area" of the bridge). Another problem arises with how you place the pennies. You could stack them on their sides, but for this problem I will assume the pennies are to be placed flat on the ground vertically and horizontally adjacent to each other in a grid-like format. 
+
+Now that the assumptions are set, it's time to solve the actual problem. First off we need to get the dimensions of the Golden Gate Bridge and a standard penny:
+
+Golden Gate Bridge length: 2,737 m = 2,737,000 mm
+Golden Gate Bridge sidewalk widths: 3m = 3,000 mm
+Golden Gate Bridge road width: 19 m = 19,000 mm
+Penny diameter: 19.05 mm
+
+Sources:
+http://www.goldengatebridge.org/research/factsGGBDesign.php
+http://en.wikipedia.org/wiki/Penny_%28United_States_coin%29
+
+Now to calculate how many pennies we can fit. We are given three surfaces that the pennies will be placed on: two sidewalks, and the road inbetween. First let's find out the number of pennies we can fit length-wise along the bridge:
+
+Bridge length / Penny diameter = 2,737,000 mm / 19.05 mm = 143,674.5407
+Round down to 143,674 because we won't be putting pennies over the edge.
+
+Now calculate how many pennies will fit width-wise for both the sidewalks and the road:
+
+Sidewalk width / Penny diameter = 3,000 mm / 19.05 mm = 157.48 -> Rounded down to 157.
+Road width / Penny diameter = 19,000 mm / 19.05 mm = 997.37 -> Rounded down to 997.
+
+Now we can find the number of pennies we can place on each of the three surfaces by multiplying the number of pennies we could fit length-wise by the number we could fit width-wise:
+
+Sidewalk surface: 157 pennies * 143,574 pennies = 22,541,118 pennies.
+Road surface: 997 pennies * 143,574 pennies = 143,143,278 pennies.
+
+Now add together the number of pennies we could fit on the road surface and the two sidewalk surfaces:
+
+2 * (22,541,118) + 143,143,278 = 188,225,514 pennies.
+
+You can fit 188,225,514 pennies on the Golden Gate Bridge with the given assumptions.

@@ -1,0 +1,21 @@
+3) What is the minimum number of moves required for a knight to cover the entire chess board? Write a program to prove it. Provide a graph with the move number on the x axis and the number of squares covered on the y axis.
+
+Using Warnsdorff's algorithm it is possible for a knight to cover the entire chess board in 64 moves assuming that placing the knight is one move. The Warnsdorff's algorithm is an algorithm where each move made is decided by the number of possible moves of the destined point. In this algorithm the move is made to the point with the fewest number of exit paths. This can be used in the knight problem because different parts of the chess board offer a different number of possible moves for a knight. Say you start in the very corner of the board, the knight only has two possible moves out of there. If you start somewhere in the middle of the board, the knight has eight different ways to go. By clearing out the spaces with the fewest possible moves first, you're less likely to get "trapped" on them later as you clear out possible landing positions by moving around the board. With this algorithm the easiest way to find a working route is to start in a corner because they have the fewest number of possible moves.
+
+Sources:
+http://en.wikipedia.org/wiki/Knight%27s_tour#Computer_algorithms
+
+64 Move Example:
+
+     1  2  3  4  5  6  7  8
+    
+1    1 60 15 24 47 36 13 26
+2   16 23 64 59 14 25 38 35
+3   63  2 61 46 37 48 27 12
+4   22 17 56 49 58 51 34 39
+5    3 62 21 52 45 40 11 28
+6   18 55 44 57 50 31  8 33
+7   43  4 53 20 41  6 29 10
+8   54 19 42  5 30  9 32  7
+
+
